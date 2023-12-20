@@ -18,7 +18,7 @@ print(df[["Name", "Address", "Lat-Long"]])
 print(df["Lat-Long"].notnull().sum())
 # Create the webdriver object
 try:
-    for i in range(2677, len(df)):
+    for i in range(3544, len(df)+1):
         try:
             browser = webdriver.Chrome()
 
