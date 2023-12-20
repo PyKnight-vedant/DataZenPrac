@@ -1,7 +1,3 @@
-
-import os
-import time
-import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import requests
@@ -13,68 +9,48 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import re
-
-driver = webdriver.Chrome()
-
-# driver.get method() will navigate to a page given by the URL address
-driver.get(
-    "https://www.justdial.com/Delhi/Ceiling-Tile-Dealers-Armstrong/nct-11271379")
+import pandas as pd
+import numpy as np
 
 
-def strings_to_num(argument):
+browser = webdriver.Chrome()
 
-    switcher = {
-        'dc': '+',
-        'fe': '(',
-        'hg': ')',
-        'ba': '-',
-        'acb': '0',
-        'yz': '1',
-        'wx': '2',
-        'vu': '3',
-        'ts': '4',
-        'rq': '5',
-        'po': '6',
-        'nm': '7',
-        'lk': '8',
-        'ji': '9'
-    }
-    return switcher.get(argument, "nothing")
+# Obtain the Google Map URL
+url = "https://www.google.com/maps/@18.4760628,73.9007086,15z?entry=ttu"
+# "https://www.google.com/maps/place/Indian+Institute+Of+Technology%E2%80%93Madras+(IIT%E2%80%93Madras)/@12.9914929,80.2311104,17z/data=!3m1!4b1!4m6!3m5!1s0x3a5267f29aa9a61f:0x24ef264085e6a094!8m2!3d12.9914929!4d80.2336907!16zL20vMGd5eHdk?entry=ttu"]
+# Open the Google Map URL
 
 
-storeDetails = driver.find_elements(By.CLASS_NAME, 'store-details')
-
-nameList = []
-addressList = []
-numbersList = []
-
-for i in range(len(storeDetails)):
-
-    name = storeDetails[i].find_elements(By.CLASS_NAME, 'lng_cont_name').text
-    address = storeDetails[i].find_elements(By.CLASS_NAME, 'cont_sw_addr').text
-    contactList = storeDetails[i].find_elements(By.CLASS_NAME, 'mobilesv')
-
-    myList = []
-
-    for j in range(len(contactList)):
-
-        myString = contactList[j].get_attribute('class').split("-")[1]
-
-        myList.append(strings_to_num(myString))
-
-    nameList.append(name)
-    addressList.append(address)
-    numbersList.append("".join(myList))
+browser.get(url)
+wait = WebDriverWait(browser, 25)
+Place = browser.find_element(
+    By.CLASS_NAME, "searchboxinput.searchboxinput.xiQnY")
+Place.send_keys("FLAME University")
+Place.send_keys(Keys.ENTER)
 
 
-# intialise data of lists.
-data = {'Company Name': nameList,
-        'Address': addressList,
-        'Phone': numbersList}
+# Initialize variables and declare it 0
 
-# Create DataFrame
-df = pd.DataFrame(data)
-print(df)
 
-# Save Data as .csv
-df.to_csv('demo1.csv', mode='a', header=False)
+# Create a loop for obtaining data from URLs
+
+
+# browser.get(url[i])
+
+# Obtain the title of that place
+wait = WebDriverWait(browser, 15)
+
+title = wait.until(EC.presence_of_element_located(
+    (By.XPATH,  "/html/body/div[1]/div[3]/div[8]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div/div[1]/div[1]/h1")))
+
+
+address = browser.find_element(By.CLASS_NAME, "CsEnBe")
+print("\n", address.text)
+
+# Get the current URL
+current_url = browser.current_url
+print("Current URL:", current_url)
+url_regex = re.compile("@\d+.\d+,\d+.\d+")
+lat_long = url_regex.findall(current_url)[0][1:]
+
+browser.quit()

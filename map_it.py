@@ -18,7 +18,7 @@ print(df[["Name", "Address", "Lat-Long"]])
 print(df["Lat-Long"].notnull().sum())
 # Create the webdriver object
 try:
-    for i in range(1, len(df)):
+    for i in range(2677, len(df)):
         try:
             browser = webdriver.Chrome()
 
@@ -49,7 +49,7 @@ try:
             wait = WebDriverWait(browser, 15)
 
             title = wait.until(EC.presence_of_element_located(
-                (By.XPATH,  "/html/body/div[3]/div[8]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div/div[1]/div[1]/h1")))
+                (By.XPATH,  "/html/body/div[1]/div[3]/div[8]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div/div[1]/div[1]/h1")))
 
             print(i, "-", title.text)
 
