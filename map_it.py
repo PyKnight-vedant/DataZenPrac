@@ -11,6 +11,8 @@ from selenium.webdriver.support import expected_conditions as EC
 import re
 import pandas as pd
 import numpy as np
+import webbrowser
+
 
 df = pd.read_csv(
     r"C:\Users\Vedant\Desktop\DataZenPrac\App2Build_Deliverable (3).csv", index_col=[0])
@@ -77,3 +79,5 @@ finally:
     print(df[["Name", "Address", "Lat-Long"]])
     df.to_csv(r"C:\Users\Vedant\Desktop\DataZenPrac\App2Build_Deliverable (3).csv")
     print(df["Lat-Long"].notnull().sum())
+    webbrowser.open(
+        r"https://open.spotify.com/track/58clncAcNFhSh5ERdonnCp?si=be02638b68324255")
