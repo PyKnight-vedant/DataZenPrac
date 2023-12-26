@@ -1,11 +1,11 @@
 ,Name,Sector,City,Address,Phone,Email,Lat-Long
-1,TANUVAS - Tamil Nadu Veterinary And Animal Sciences University,College,Chennai,,,,"13.1625003,80.2411121"
+1,TANUVAS - Tamil Nadu Veterinary And Animal Sciences University,College,Chennai,"567V+2F3, Madhavaram Milk Colony Rd, Madhavaram Milk Colony, Chennai, Tamil Nadu 600051",044 2555 1586,,"13.1625003,80.2411121"
 2,"Sri Venkateswara College of Engineering, Kanchipuram",College,Chennai,,,,"12.987903,79.9686392"
 3,Vel Tech High Tech Dr.Rangarajan Dr.Sakunthala Engineering College,College,Chennai,,,,"13.188565,80.1040186"
-4,Sri Sai Ram Institute of Technology,College,Chennai,"Sairam College Rd, Sai Leo Nagar, West Tambaram, Chennai, Tamil Nadu 600044",,,"12.9606471,80.0506576"
-5,IFET College of Engineering,College,Chennai,"College of Engineering, IFET ROAD, Nagar, Gangarampalaiyam, Tamil Nadu 605108",,,"11.9207389,79.608157"
-6,DoMS IIT Madras - Department of Management Studies,College,Chennai,"X6RM+JRJ, Delhi Ave, Indian Institute Of Technology, Chennai, Tamil Nadu 600036",,,"12.9915954,80.2319556"
-7,Loyola Institute of Business Administration,College,Chennai,"Loyola College Campus, No: 1, Sterling Rd, Nungambakkam, Chennai, Tamil Nadu 600034",,,"13.0591988,80.2333017"
+4,Sri Sai Ram Institute of Technology,College,Chennai,"Sairam College Rd, Sai Leo Nagar, West Tambaram, Chennai, Tamil Nadu 600044",044 4226 7777,,"12.9606471,80.0506576"
+5,IFET College of Engineering,College,Chennai,"College of Engineering, IFET ROAD, Nagar, Gangarampalaiyam, Tamil Nadu 605108",094421 85456,,
+6,DoMS IIT Madras - Department of Management Studies,College,Chennai,"X6RM+JRJ, Delhi Ave, Indian Institute Of Technology, Chennai, Tamil Nadu 600036",044 2257 4550,,
+7,Loyola Institute of Business Administration,College,Chennai,"Loyola College Campus, No: 1, Sterling Rd, Nungambakkam, Chennai, Tamil Nadu 600034",094440 28418,,
 8,"SRM School of Management, SRMIST - SRM Institute of Science and Technology, Chennai",College,Chennai,,,,"13.0420082,80.1750252"
 9,"SRM Institute of Science and Technology, Chennai - Ramapuram Campus",College,Chennai,"Bharathi Salai, Ramapuram, Chennai, Tamil Nadu 600089",,,"13.0322541,80.1781627"
 10,Vellore Institute of Technology - Chennai Campus,College,Chennai,"Kelambakkam - Vandalur Rd, Rajan Nagar, Chennai, Tamil Nadu 600127",,,"12.840641,80.1508534"
@@ -9657,7 +9657,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 9261,Prema Vihar,Retail,Mumbai,,02225742958,,
 9262,Aye Dio Mio,Retail,Mumbai,,02230932030,,
 9263,Temptations,Retail,Mumbai,,,,
-9264,Nini Ka Dhaba,Retail,Mumbai,,,,
+9264,Nini Ka Dhaba,Retail,Mumbai,,099675 75115,,
 9265,Gorb,Retail,Mumbai,,,,
 9266,Swadesh,Retail,Mumbai,,"02226702587
 														,
@@ -9842,7 +9842,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 9407,Jumbo King,Retail,Mumbai,,,,
 9408,Cannon Pav Bhaji,Retail,Mumbai,,02222074205,,
 9409,Monsoon-The Chaat Corner,Retail,Mumbai,,02266935457,,
-9410,Ganesha Jumbo Idli,Retail,Mumbai,,,,
+9410,Ganesha Jumbo Idli,Retail,Mumbai,,090229 44777,,
 9411,Gopal Restaurant,Retail,Mumbai,,02228825331,,
 9412,Bharat Cafe,Retail,Mumbai,,02225112366,,
 9413,Gopalashram,Retail,Mumbai,,02222834282,,
@@ -9905,7 +9905,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 														,
 
 09820423533",,
-9458,Saras Italian Bite,Retail,Mumbai,,,,
+9458,Saras Italian Bite,Retail,Mumbai,,082913 35784,,
 9459,Jai Maa Vidhyshine Dairy Farm,Retail,Mumbai,,,,
 9460,Hotel Sai Ram,Retail,Mumbai,,02225882903,,
 9461,Jumbo King,Retail,Mumbai,,,,
@@ -9950,7 +9950,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 														,
 
 09819300755",,
-9491,The Flying Noodle,Retail,Mumbai,,,,
+9491,The Flying Noodle,Retail,Mumbai,,099874 42291,,
 9492,Pizza Palette,Retail,Mumbai,,02265231002,,
 9493,Suraj Chinese Cuisine,Retail,Mumbai,,02225662645,,
 9494,Kwanz Fresh Asian,Retail,Mumbai,,02228847169,,
@@ -10018,7 +10018,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 														,
 
 09324402226",,
-9526,New Laxmi Fish & Kabab Corner,Retail,Mumbai,,,,
+9526,New Laxmi Fish & Kabab Corner,Retail,Mumbai,,098333 58655,,
 9527,Shagun Restaurant,Retail,Mumbai,,02228950872,,
 9528,Sandwizzaa,Retail,Mumbai,,02261245811,,
 9529,Hotel Sarveshwar,Retail,Mumbai,,"02264501439
@@ -10063,7 +10063,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 09820700687",,
 9542,Aum Shivam Restaurant,Retail,Mumbai,,02228696050,,
 9543,Balaji Pure Veg,Retail,Mumbai,,02228800390,,
-9544,Banwaits Food Court,Retail,Mumbai,,,,
+9544,Banwaits Food Court,Retail,Mumbai,,096196 23278,,
 9545,Raaga Veg Treat,Retail,Mumbai,,02225717144,,
 9546,Albela Restaurant,Retail,Mumbai,,"02228649886
 														,
@@ -10121,7 +10121,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 														,
 
 09967774273",,
-9566,Kulsum Fast Food,Retail,Mumbai,,,,
+9566,Kulsum Fast Food,Retail,Mumbai,,098673 85915,,
 9567,Gulshan E Hind Restaurant,Retail,Mumbai,,02264202202,,
 9568,Refresh Cafe,Retail,Mumbai,,"02264202082
 														,
@@ -10198,7 +10198,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 
 09892445091",,
 9612,Sushi Cafe,Retail,Mumbai,,,,
-9613,Girgaon Katta,Retail,Mumbai,,,,
+9613,Girgaon Katta,Retail,Mumbai,,022 2893 4140,,
 9614,Traditional Biriyani,Retail,Mumbai,,,,
 9615,Biryani.com,Retail,Mumbai,,02231906160,,
 9616,Sai Ved,Retail,Mumbai,,"02226863805
@@ -10230,7 +10230,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 														,
 
 09029050023",,
-9630,Salsa Wraps,Retail,Mumbai,,,,
+9630,Salsa Wraps,Retail,Mumbai,,098339 31220,,
 9631,Junction 45,Retail,Mumbai,,,,
 9632,Faasos,Retail,Mumbai,,02265140002,,
 9633,I Feel Healthy Today,Retail,Mumbai,,"02231905010
@@ -10246,7 +10246,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 														,
 
 07498113823",,
-9637,Panchforon,Retail,Mumbai,,,,
+9637,Panchforon,Retail,Mumbai,,080806 36253,,
 9638,Faasos,Retail,Mumbai,,02265530008,,
 9639,Balaji Idli House,Retail,Mumbai,,"02232266301
 														,
@@ -10274,7 +10274,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 
 09969595900",,
 9649,Sai Sanjog,Retail,Mumbai,,02227575566,,
-9650,Chote Nawab,Retail,Mumbai,,,,
+9650,Chote Nawab,Retail,Mumbai,,098209 79899,,
 9651,Kings Chinese Corner,Retail,Mumbai,,,,
 9652,Fisherman's Kitchen,Retail,Mumbai,,"02227562700
 														,
@@ -10290,7 +10290,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 														,
 
 09768151619",,
-9657,Dharmveer Chinese Centre,Retail,Mumbai,,,,
+9657,Dharmveer Chinese Centre,Retail,Mumbai,,022 2533 2393,,
 9658,Golden Chariot,Retail,Mumbai,,"02502463070
 														,
 
@@ -10313,7 +10313,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 														,
 
 09819008383",,
-9668,Sai Sraddha,Retail,Mumbai,,,,
+9668,Sai Sraddha,Retail,Mumbai,,022 2388 1770,,
 9669,Hotel Signature,Retail,Mumbai,,"02232248388
 														,
 
@@ -10351,7 +10351,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 9688,Navaratna Restaurant,Retail,Mumbai,,02227721414,,
 9689,Om Sai Family Restaurant,Retail,Mumbai,,,,
 9690,Prachi Chinese Centre,Retail,Mumbai,,,,
-9691,Sai Darbar Biryani Corner,Retail,Mumbai,,,,
+9691,Sai Darbar Biryani Corner,Retail,Mumbai,,022 2772 0568,,
 9692,New Shiv Sagar,Retail,Mumbai,,02227810107,,
 9693,Shri Jyoti Lunch Home,Retail,Mumbai,,,,
 9694,Shree Sai Ganesh,Retail,Mumbai,,,,
@@ -10377,7 +10377,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 
 09920099152",,
 9704,Sainidhi Restaurant,Retail,Mumbai,,02506821063,,
-9705,Mavshi's Kitchen,Retail,Mumbai,,,,
+9705,Mavshi's Kitchen,Retail,Mumbai,,088793 77316,,
 9706,Five Fat Monks,Retail,Mumbai,,02265113777,,
 9707,Punjab Da Mela,Retail,Mumbai,,02265114020,,
 9708,Sip N Bitesss,Retail,Mumbai,,"02269993636
@@ -10505,7 +10505,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 9773,Mom's Kitchen,Retail,Mumbai,,02223776006,,
 9774,Hotel Sahil,Retail,Mumbai,,02226484781,,
 9775,Pappilon Fast Food Corner,Retail,Mumbai,,02226710295,,
-9776,Chaitanya Fast Food,Retail,Mumbai,,,,
+9776,Chaitanya Fast Food,Retail,Mumbai,,022 2807 0291,,
 9777,Udupi Restaurant,Retail,Mumbai,,02232667979,,
 9778,Gold Rush Fast Food,Retail,Mumbai,,02224460656,,
 9779,Oriental Spice Restaurant,Retail,Mumbai,,"02225421111
@@ -11205,7 +11205,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 10164,National Hindu Restaurant,Retail,Mumbai,,02222615159,,
 10165,Dum Biryani,Retail,Mumbai,,,,
 10166,Inside China,Retail,Mumbai,,,,
-10167,Marzozin Fast Food,Retail,Mumbai,,,,
+10167,Marzozin Fast Food,Retail,Mumbai,,077099 98024,,
 10168,Dosa Plaza,Retail,Mumbai,,02232151314,,
 10169,Crispy Kream,Retail,Mumbai,,,,
 10170,Funda,Retail,Mumbai,,,,
@@ -11299,7 +11299,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 
 09820096058",,
 10209,Tulsi  Restaurant,Retail,Mumbai,,02271042038,,
-10210,Maa Anjani Pav Bhaji Center,Retail,Mumbai,,,,
+10210,Maa Anjani Pav Bhaji Center,Retail,Mumbai,,099202 18777,,
 10211,Ridhunduar Kinara,Retail,Mumbai,,02221720182,,
 10212,Uncle Chinese Corner,Retail,Mumbai,,"02229259080
 														,
@@ -11339,7 +11339,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 														,
 
 09833160616",,
-10235,Mangalam Motors,Retail,Mumbai,,,,
+10235,Mangalam Motors,Retail,Mumbai,,099205 67138,,
 10236,Yaash TVS,Retail,Mumbai,,02228500011,,
 10237,Spectra Auto,Retail,Mumbai,,02227707766,,
 10238,Soniya Royal Enfield,Retail,Mumbai,,"02225824770
@@ -12332,7 +12332,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 														,
 
 09820076654",,
-10616,Fitness Finders India,Retail,Mumbai,,,,
+10616,Fitness Finders India,Retail,Mumbai,,022 2369 4655,,
 10617,Edge Interiors,Retail,Mumbai,,"02224096124
 														,
 
@@ -12420,7 +12420,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 														,
 
 09820964183",,
-10650,Sunrise Sports And Fitness,Retail,Mumbai,,,,
+10650,Sunrise Sports And Fitness,Retail,Mumbai,,098709 51833,,
 10651,Health Care Equipments,Retail,Mumbai,,"02266951142
 														,
 
@@ -12452,12 +12452,12 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 09820932385",,
 10659,Panchand Ishwarlal,Retail,Mumbai,,02222089299,,
 10660,Creative Marketing And Engineering Company,Retail,Mumbai,,02225774237,,
-10661,Spaceage Health Care,Retail,Mumbai,,,,
+10661,Spaceage Health Care,Retail,Mumbai,,022 2850 8653,,
 10662,Selection Center Sports Private Limited,Retail,Mumbai,,"02243405200
 														,
 
 09819162455",,
-10663,Spaceage Health Care,Retail,Mumbai,,,,
+10663,Spaceage Health Care,Retail,Mumbai,,022 2850 8653,,
 10664,Home Fitness Direct,Retail,Mumbai,,02225973434,,
 10665,Ace Pilot Corporation,Retail,Mumbai,,02228825804,,
 10666,Amit Enterprises,Retail,Mumbai,,02224466805,,
@@ -13000,7 +13000,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 10909,The Mobile Store,Retail,Mumbai,,02260006363,,
 10910,Sagar Studio,Retail,Mumbai,,02224475250,,
 10911,Anand Watch Company,Retail,Mumbai,,,,
-10912,Ruby Watch Company And Mobile Centre,Retail,Mumbai,,,,
+10912,Ruby Watch Company And Mobile Centre,Retail,Mumbai,,098679 36356,,
 10913,Shree Cellulars,Retail,Mumbai,,"02502551113
 														,
 
@@ -13058,7 +13058,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 09223260570",,
 10938,Connection,Retail,Mumbai,,,,
 10939,New OG Collection,Retail,Mumbai,,02232691422,,
-10940,M Zone,Retail,Mumbai,,,,
+10940,M Zone,Retail,Mumbai,,022 2422 6872,,
 10941,Mobile Point,Retail,Mumbai,,02228766453,,
 10942,Cell N Com,Retail,Mumbai,,02267211258,,
 10943,Vishwa Bharat Communication,Retail,Mumbai,,02225495435,,
@@ -13192,11 +13192,11 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 
 09320970007",,
 10995,Saheli,Retail,Mumbai,,02225929879,,
-10996,Jyothi Enterprises,Retail,Mumbai,,,,
+10996,Jyothi Enterprises,Retail,Mumbai,,080 4896 4684,,
 10997,Vodafone Mini Store,Retail,Mumbai,,,,
 10998,Laxmi Electronics,Retail,Mumbai,,,,
 10999,Laxmi Collections,Retail,Mumbai,,,,
-11000,Seva Sadan,Retail,Mumbai,,,,
+11000,Seva Sadan,Retail,Mumbai,,022 2380 8005,,
 11001,Anas Telecom,Retail,Mumbai,,,,
 11002,Hari Har Electronics,Retail,Mumbai,,,,
 11003,Your Choice Mobile,Retail,Mumbai,,,,
@@ -13261,7 +13261,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 11044,Seema Electronics,Retail,Mumbai,,,,
 11045,Planet M,Retail,Mumbai,,02224122182,,
 11046,Mantri Indicom,Retail,Mumbai,,,,
-11047,Falna Electronics,Retail,Mumbai,,,,
+11047,Falna Electronics,Retail,Mumbai,,073040 37635,,
 11048,HN Communication,Retail,Mumbai,,,,
 11049,VS Telecom,Retail,Mumbai,,,,
 11050,Kusum Raja Associates,Retail,Mumbai,,,,
@@ -13294,7 +13294,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 														,
 
 09987271717",,
-11071,Falna Electronics,Retail,Mumbai,,,,
+11071,Falna Electronics,Retail,Mumbai,,073040 37635,,
 11072,Mantri Indicom,Retail,Mumbai,,,,
 11073,Sai Krupa Mobile Service,Retail,Mumbai,,,,
 11074,Nazneen Telecom,Retail,Mumbai,,,,
@@ -13394,7 +13394,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 
 09821045786",,
 11131,Sagar Photo Studio,Retail,Mumbai,,,,
-11132,Jai Maharashtra Communication Centre,Retail,Mumbai,,,,
+11132,Jai Maharashtra Communication Centre,Retail,Mumbai,,098920 60990,,
 11133,ACE INC,Retail,Mumbai,,,,
 11134,Samsung Showroom,Retail,Mumbai,,02266099455,,
 11135,Jalani,Retail,Mumbai,,,,
@@ -13664,7 +13664,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 11249,Imagine,Retail,Mumbai,,02227363501,,
 11250,Saifal Mobile,Retail,Mumbai,,,,
 11251,Croma,Retail,Mumbai,,0226479018,,
-11252,Mangal Murti Telecom,Retail,Mumbai,,,,
+11252,Mangal Murti Telecom,Retail,Mumbai,,072766 61500,,
 11253,Mettal Collection,Retail,Mumbai,,"02228865587
 														,
 
@@ -13970,7 +13970,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 
 09320313133",,
 11425,Electro India,Retail,Mumbai,,02226176636,,
-11426,Monalisa Telecom,Retail,Mumbai,,,,
+11426,Monalisa Telecom,Retail,Mumbai,,098206 23503,,
 11427,Jyoti Telequipments Private Limited,Retail,Mumbai,,02223716993,,
 11428,New Maharashtra Telecom,Retail,Mumbai,,02266976097,,
 11429,Fortune Connect,Retail,Mumbai,,,,
@@ -14277,7 +14277,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 11568,Galleria Shopping Center,Retail,Mumbai,,02265973119,,
 11569,RPG Cellucom Stores,Retail,Mumbai,,02226213037,,
 11570,RPG Cellucom Stores,Retail,Mumbai,,02225128085,,
-11571,Karan Telecom,Retail,Mumbai,,,,
+11571,Karan Telecom,Retail,Mumbai,,022 2648 0752,,
 11572,Global,Retail,Mumbai,,02227661112,,
 11573,RPG Cellucom Stores,Retail,Mumbai,,02264505123,,
 11574,Nakshatra,Retail,Mumbai,,02232639963,,
@@ -14693,7 +14693,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 														,
 
 09094006959",,
-11762,Aarthi Motors,Retail,Chennai,"Choolai High Road, Chennai",,,
+11762,Aarthi Motors,Retail,Chennai,"Choolai High Road, Chennai",097908 05222,,
 11763,AB Sports Inn,Retail,Chennai,"Ayanavaram, Chennai","04426740333
 														,
 
@@ -14879,7 +14879,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 
 09841345393",,
 11842,AP Trading Company,Retail,Chennai,"Park Town, Chennai",04425364613,,
-11843,Apple Motors,Retail,Chennai,"Kanchipuram, Chennai",,,
+11843,Apple Motors,Retail,Chennai,"Kanchipuram, Chennai",099627 00999,,
 11844,Arasan Footwear,Retail,Chennai,"Broadway, Chennai",04425394418,,
 11845,Aravinduja Motors,Retail,Chennai,"Kattupakkam, Chennai","04445554888
 														,
@@ -15041,7 +15041,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 
 09444050871",,
 11950,Best Walk,Retail,Chennai,"Virugambakkam, Chennai",04424796637,,
-11951,BG Motors,Retail,Chennai,"Ponneri, Chennai",,,
+11951,BG Motors,Retail,Chennai,"Ponneri, Chennai",090436 75262,,
 11952,Bhagwaan Cars,Retail,Chennai,"Ambattur, Chennai","04426243455
 														,
 
@@ -15076,7 +15076,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 
 09841046421",,
 11967,Bison Nitting Company,Retail,Chennai,"Royapettah, Chennai",04428112891,,
-11968,BJS Foot Collection,Retail,Chennai,"Vadapalani, Chennai",,,
+11968,BJS Foot Collection,Retail,Chennai,"Vadapalani, Chennai",044 6642 7101,,
 11969,Blackberrys,Retail,Chennai,"Vadapalani, Chennai","04449188334
 														,
 
@@ -15268,7 +15268,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 12058,Cotton World,Retail,Chennai,"Velachery, Chennai",04430083327,,
 12059,Cravatex Limited,Retail,Chennai,"T.Nagar, Chennai",04442132883,,
 12060,Crazy Fe's Factory,Retail,Chennai,"Anna Nagar East, Chennai",,,
-12061,Crazy Fe's Factory,Retail,Chennai,"Velacheri, Chennai",,,
+12061,Crazy Fe's Factory,Retail,Chennai,"Velacheri, Chennai",097911 77027,,
 12062,Cresent Fashion Buttons,Retail,Chennai,"Saidapet, Chennai",04424851384,,
 12063,Crimsoune Club,Retail,Chennai,"Kottivakkam, Chennai",04424487770,,
 12064,Da Milano Italia,Retail,Chennai,"Royapettah, Chennai",04428464033,,
@@ -15298,7 +15298,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 09841070453",,
 12074,Deva Auto Consultants,Retail,Chennai,"Adambakkam, Chennai",,,
 12075,Dhanraj Jewellers,Retail,Chennai,"Sowcarpet, Chennai",04425353619,,
-12076,Dhanu Gems,Retail,Chennai,"Choolai, Chennai",,,
+12076,Dhanu Gems,Retail,Chennai,"Choolai, Chennai",098419 88312,,
 12077,Dharshini Motors,Retail,Chennai,"Tambaram Sanatorium, Chennai","04422411822
 														,
 
@@ -15438,7 +15438,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 09840457777",,
 12139,Eureka Forbes,Retail,Chennai,"Ambattur, Chennai",04430650128,,
 12140,Euro Shoe Companies,Retail,Chennai,"sidco industrial estate, Chennai",04426253441,,
-12141,Everest Foot Wear,Retail,Chennai,"Ambattur, Chennai",,,
+12141,Everest Foot Wear,Retail,Chennai,"Ambattur, Chennai",094441 91796,,
 12142,Evergreen Motors,Retail,Chennai,"Saidapet, Chennai","04442040032
 														,
 
@@ -15579,7 +15579,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 
 09841073106",,
 12206,Gili Store,Retail,Chennai,"Velachery, Chennai",04430083347,,
-12207,Gini And Jony,Retail,Chennai,"Valasaravakkam, Chennai",,,
+12207,Gini And Jony,Retail,Chennai,"Valasaravakkam, Chennai",098841 01881,,
 12208,GJ TVS,Retail,Chennai,"Tiruthani Nagar, Chennai",04427886171,,
 12209,Glacier Home Appliances & Services Private Limited,Retail,Chennai,"MGR Nagar, Chennai","04443858886
 														,
@@ -15796,7 +15796,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 														,
 
 09841087273",,
-12316,Jai Cars,Retail,Chennai,"Metha Nagar, Chennai",,,
+12316,Jai Cars,Retail,Chennai,"Metha Nagar, Chennai",099412 56789,,
 12317,Jai Hanuman Gems,Retail,Chennai,"Choolai, Chennai","04426691292
 														,
 
@@ -16261,7 +16261,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 12514,Mahadev Garments,Retail,Chennai,"Sowcarpet, Chennai",04425391038,,
 12515,Mahalakshmi Footwear,Retail,Chennai,"Purasavakkam, Chennai",04442175368,,
 12516,Mahalakshmi Motors,Retail,Chennai,"Keel Kattalai, Chennai",04442185050,,
-12517,Maharaja Cars,Retail,Chennai,"Balaji Nagar, Chennai",,,
+12517,Maharaja Cars,Retail,Chennai,"Balaji Nagar, Chennai",098410 77738,,
 12518,Maharaja Foot Wear,Retail,Chennai,"T.Nagar, Chennai",04424342859,,
 12519,Mahatis Agency,Retail,Chennai,"Ashok Nagar, Chennai",04424893349,,
 12520,Mahaveer Bikes,Retail,Chennai,"Royapuram, Chennai",04425977895,,
@@ -16843,7 +16843,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 
 09841363512",,
 12795,Raviram Motors,Retail,Chennai,"Chengalpattu, Chennai",04427432500,,
-12796,Rayar Mess,Retail,Chennai,"Mylapore, Chennai",,,
+12796,Rayar Mess,Retail,Chennai,"Mylapore, Chennai",099404 25551,,
 12797,Raymond Made To Measure,Retail,Chennai,"Nungambakkam, Chennai",04445038384,,
 12798,Raziya Foot Wear,Retail,Chennai,"Broadway, Chennai",04425382872,,
 12799,RBC Bearing Private Limited,Retail,Chennai,"Parrys, Chennai",04425220017,,
@@ -16885,7 +16885,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 12826,RK Moorthy Auto Consultant,Retail,Chennai,"Mount Road, Chennai",04428514821,,
 12827,RM Jewellers,Retail,Chennai,"Cathedral Road, Chennai",04442144565,,
 12828,RN Electronics,Retail,Chennai,"Anna Nagar A Block, Chennai",04442693238,,
-12829,RN Motohub,Retail,Chennai,"Villivakkam, Chennai",,,
+12829,RN Motohub,Retail,Chennai,"Villivakkam, Chennai",098410 20304,,
 12830,Rocia,Retail,Chennai,"Royapettah, Chennai","04428464038
 														,
 
@@ -16910,7 +16910,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 12839,Royal Autos,Retail,Chennai,"Tiruvanmiyur, Chennai",04442114413,,
 12840,Royal Classic Mills Private Limited,Retail,Chennai,"T.Nagar, Chennai",04424355252,,
 12841,Royal Electronics,Retail,Chennai,"Mint, Chennai",,,
-12842,Royal Enfied Dino Motorcycles,Retail,Chennai,"Ambattur Ot, Chennai",,,
+12842,Royal Enfied Dino Motorcycles,Retail,Chennai,"Ambattur Ot, Chennai",088794 85909,,
 12843,Royal Enfield,Retail,Chennai,"Adyar, Chennai","04442607777
 														,
 
@@ -17164,7 +17164,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 														,
 
 09500069101",,
-12958,SMC Hero,Retail,Chennai,"Tambaram, Chennai",,,
+12958,SMC Hero,Retail,Chennai,"Tambaram, Chennai",07397 252 999,,
 12959,SMK Motor Agencies Private Limited,Retail,Chennai,"Guindy, Chennai","04422201444
 														,
 
@@ -17214,7 +17214,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 														,
 
 09840675417",,
-12978,Speed Casuals,Retail,Chennai,"Mount Road, Chennai",,,
+12978,Speed Casuals,Retail,Chennai,"Mount Road, Chennai",098841 62008,,
 12979,Spencer's Hyper,Retail,Chennai,"Anna Salai, Chennai",04428496887,,
 12980,Spice Fashion,Retail,Chennai,"Kellys, Chennai","04442662672
 														,
@@ -17732,7 +17732,7 @@ Sector-I, Labony, Kolkata-700064",,,"18.4760581,73.8698087"
 														,
 
 09444959595",,
-13223,VM Sports,Retail,Chennai,"Tambaram East, Chennai",,,
+13223,VM Sports,Retail,Chennai,"Tambaram East, Chennai",099417 73646,,
 13224,VNS Fashion,Retail,Chennai,"Padi, Chennai",04426258274,,
 13225,VS Automobiles,Retail,Chennai,"Mogapper West, Chennai","04426244178
 														,

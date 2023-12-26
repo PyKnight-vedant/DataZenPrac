@@ -61,7 +61,7 @@ if __name__ == "__main__":
     # Create the webdriver object
 
     try:
-        for i in range(1550, len(df)+1):
+        for i in range(len(df), 1, -1):
             try:
                 scraper(i)
 

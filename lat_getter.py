@@ -39,7 +39,7 @@ def scraper(i):
         if df.loc[i, "Lat-Long"] is np.nan:
             browser = webdriver.Chrome()
             browser.get(url)
-            wait = WebDriverWait(browser, 25)
+
             Place = browser.find_element(
                 By.CLASS_NAME, "searchboxinput.searchboxinput.xiQnY")
             Place.send_keys(df.loc[i, "Name"]+","+df.loc[i, "City"])
