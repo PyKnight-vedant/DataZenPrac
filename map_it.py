@@ -28,8 +28,7 @@ def scraper(i):
 # "https://www.google.com/maps/place/Indian+Institute+Of+Technology%E2%80%93Madras+(IIT%E2%80%93Madras)/@12.9914929,80.2311104,17z/data=!3m1!4b1!4m6!3m5!1s0x3a5267f29aa9a61f:0x24ef264085e6a094!8m2!3d12.9914929!4d80.2336907!16zL20vMGd5eHdk?entry=ttu"]
 # Open the Google Map URL
 
-    print(i, "---------", df.loc[i, "Name"],
-          "---------", df.loc[i, "Phone"])
+    print(i, "===================================\n", df.loc[i, :])
     if df.loc[i, "Phone"] is np.nan or df.loc[i, "Address"] is np.nan or df.loc[i, "Lat-Long"] is np.nan:
         chrome_options = webdriver.ChromeOptions()
         chrome_options.add_argument('--headless')
@@ -91,7 +90,7 @@ if __name__ == "__main__":
                 # continue
 
     finally:
-        print(df[["Name", "Phone", "Lat-Long"]])
+        print(df[["Name", "Phone", "Address", "Lat-Long"]])
         df.to_csv(
             r"C:\Users\Vedant\Desktop\DataZenPrac\App2Build_Deliverable (4).csv")
         print(df["Phone"].notnull().sum())
