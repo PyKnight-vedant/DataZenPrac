@@ -17,6 +17,11 @@ import time
 import multiprocessing
 df = pd.read_csv(
     r"C:\Users\Vedant\Desktop\DataZenPrac\App2Build_Deliverable (4).csv", index_col=[0])
+l = []
+for i in range(1, len(df)+1):
+    l.append(i)
+df.index = l
+
 print(df[["Name", "Address", "Lat-Long"]])
 print(df["Lat-Long"].notnull().sum())
 
@@ -65,6 +70,10 @@ if __name__ == "__main__":
 
     finally:
         print(df[["Name", "Address", "Lat-Long"]])
+        l = []
+        for i in range(1, len(df)+1):
+            l.append(i)
+            df.index = l
         df.to_csv(
             r"C:\Users\Vedant\Desktop\DataZenPrac\App2Build_Deliverable (4).csv")
         print(df["Lat-Long"].notnull().sum())
