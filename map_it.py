@@ -18,7 +18,12 @@ import multiprocessing
 df = pd.read_csv(
     r"C:\Users\Vedant\Desktop\DataZenPrac\App2Build_Deliverable (4).csv", index_col=[0])
 print(df[["Name", "Address", "Lat-Long"]])
+print("Phone")
 print(df["Phone"].notnull().sum())
+print("Address")
+print(df["Address"].notnull().sum())
+print("Lat-Long")
+print(df["Lat-Long"].notnull().sum())
 
 
 def scraper(i):
@@ -31,7 +36,7 @@ def scraper(i):
     print(i, "===================================\n", df.loc[i, :])
     if df.loc[i, "Phone"] is np.nan or df.loc[i, "Address"] is np.nan or df.loc[i, "Lat-Long"] is np.nan:
         chrome_options = webdriver.ChromeOptions()
-        chrome_options.add_argument('--headless')
+        # chrome_options.add_argument('--headless')
         chrome_options.add_argument('--incognito')
         browser = webdriver.Chrome(options=chrome_options)
         browser.get(url)
@@ -41,6 +46,14 @@ def scraper(i):
         Place.send_keys(df.loc[i, "Name"]+","+df.loc[i, "City"])
         Place.send_keys(Keys.ENTER)
         wait = WebDriverWait(browser, 8)
+        # Get the current URL
+        time.sleep(3)
+        current_url = browser.current_url
+        print("Current URL:", current_url)
+        url_regex = re.compile("@\d+.\d+,\d+.\d+")
+        lat_long = url_regex.findall(current_url)[0][1:]
+        df.loc[i, "Lat-Long"] = lat_long
+
         title = wait.until(EC.presence_of_element_located(
             (By.XPATH,  "/html/body/div[1]/div[3]/div[8]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div/div[1]/div[1]/h1")))
 
@@ -61,13 +74,7 @@ def scraper(i):
                     print(phone[0])
                     break
         df.loc[i, "Phone"] = phone[0]
-        # Get the current URL
-        time.sleep(3)
-        current_url = browser.current_url
-        print("Current URL:", current_url)
-        url_regex = re.compile("@\d+.\d+,\d+.\d+")
-        lat_long = url_regex.findall(current_url)[0][1:]
-        df.loc[i, "Lat-Long"] = lat_long
+
         browser.quit()
 
 
@@ -76,7 +83,7 @@ if __name__ == "__main__":
     # Create the webdriver object
 
     try:
-        for i in range(12395, 1124, -1):
+        for i in range(9666, len(df)+1):
             try:
                 scraper(i)
 
@@ -93,6 +100,11 @@ if __name__ == "__main__":
         print(df[["Name", "Phone", "Address", "Lat-Long"]])
         df.to_csv(
             r"C:\Users\Vedant\Desktop\DataZenPrac\App2Build_Deliverable (4).csv")
+        print("Phone")
         print(df["Phone"].notnull().sum())
+        print("Address")
+        print(df["Address"].notnull().sum())
+        print("Lat-Long")
+        print(df["Lat-Long"].notnull().sum())
         webbrowser.open(
             r"https://open.spotify.com/track/4cjrtfi0I7xLMQvxnICu6U?si=4d87843fb55b4c47")
