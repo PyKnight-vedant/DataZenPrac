@@ -36,7 +36,7 @@ def scraper(i):
     print(i, "===================================\n", df.loc[i, :])
     if df.loc[i, "Phone"] is np.nan or df.loc[i, "Address"] is np.nan or df.loc[i, "Lat-Long"] is np.nan:
         chrome_options = webdriver.ChromeOptions()
-        # chrome_options.add_argument('--headless')
+        chrome_options.add_argument('--headless')
         chrome_options.add_argument('--incognito')
         browser = webdriver.Chrome(options=chrome_options)
         browser.get(url)
