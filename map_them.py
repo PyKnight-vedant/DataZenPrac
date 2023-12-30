@@ -17,9 +17,26 @@ import time
 import multiprocessing
 from maps_scraper import scraper
 
-title, address, phone_no, lat_long = scraper(
-    "https://www.google.com/maps/place/Azim+Premji+University/data=!4m7!3m6!1s0x3bae6ca333d66cbb:0x2d04fd24fb931c3b!8m2!3d12.8452628!4d77.7768752!16s%2Fm%2F0jzspd0!19sChIJu2zWM6NsrjsROxyT-yT9BC0?authuser=0&hl=en&rclk=1")
+Category = input("Enter the category/sector: ")
+City = input("Enter the city name: ")
+keyword = Category+" in "+City
+urls = []
+url = "https://www.google.com/maps/@18.4760628,73.9007086,15z?entry=ttu"
+chrome_options = webdriver.ChromeOptions()
+chrome_options.add_argument('--headless')
+chrome_options.add_argument('--incognito')
+browser = webdriver.Chrome(options=chrome_options)
+browser.get(url)
+wait = WebDriverWait(browser, 3)
+Place = browser.find_element(
+    By.CLASS_NAME, "searchboxinput.searchboxinput.xiQnY")
+Place.send_keys(keyword)
+Place.send_keys(Keys.ENTER)
+
+
+title, address, phone_no, lat_long = scraper(url)
 
 print("Title: "+title)
 print("Address: "+address)
 print("Phone Number: "+phone_no)
+print("Latitude & Longitude: " + lat_long)

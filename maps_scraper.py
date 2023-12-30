@@ -30,9 +30,9 @@ def scraper(url):
     browser = webdriver.Chrome(options=chrome_options)
     browser.get(url)
     wait = WebDriverWait(browser, 3)
-    time.sleep(5)
+    time.sleep(3.5)
     current_url = browser.current_url
-    print("Current URL:", current_url)
+    # print("Current URL:", current_url)
     url_regex = re.compile("@\d+.\d+,\d+.\d+")
     lat_long = url_regex.findall(current_url)[0][1:]
 
