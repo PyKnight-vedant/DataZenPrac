@@ -11,22 +11,21 @@ import re
 import pandas as pd
 import numpy as np
 import time
+from tqdm import tqdm
 chrome_options = webdriver.ChromeOptions()
-# chrome_options.add_argument('--headless')
+chrome_options.add_argument('--headless')
 chrome_options.add_argument('--incognito')
 browser = webdriver.Chrome(options=chrome_options)
-df = pd.DataFrame()
-df["Name"] = ""
-df["Sector"] = "Gyms"
-df["City"] = ""
-df["Address"] = ""
-df["Phone"] = ""
-df["Email"] = ""
-df["Lat-Long"] = ""
+df = pd.read_csv(
+    r"C:\Users\Vedant\Desktop\DataZenPrac\Final_Companies.csv", index_col=0)
+
+df["Sector"] = "Companies(Private)"
+
 '''
 links = []
-for i in range(1, 175):
-    url = f"https://www.mouthshut.com/Gyms-and-Fitness-Centres-ProID-925758-page-{i}"
+for i in range(1, 1088):
+    url = f"https://www.mouthshut.com/Employer-ProID-21-page-{i}"
+    print(f"Scraping {url}")
     browser.get(url)
     cards = browser.find_elements(By.CLASS_NAME, "card-body")
     for card in cards:
@@ -35,18 +34,17 @@ for i in range(1, 175):
         print(link)
         links.append(link)
 
-file_path = "gym_links.txt"
+file_path = "companies_links.txt"
 
 # Open the file in write mode
 with open(file_path, "w") as file:
     # Write each element to the file
     for link in links:
         file.write(link + "\n")
+
 '''
-
-
 # Specify the file path
-file_path = "gym_links.txt"
+file_path = "links.txt"
 
 # Open the file in read mode
 with open(file_path, "r") as file:
@@ -59,9 +57,13 @@ links = [link.strip() for link in links]
 # Display the list
 print(links)
 
-c = 1
-for link in links:
+l = len(links)
+
+for c in tqdm(range(842, l)):
     print("============================================================")
+
+    link = links[c-1]
+    # print(link)
     try:
         browser.get(link)
         print(c)
@@ -70,19 +72,23 @@ for link in links:
             By.XPATH, "/html/body/div[2]/form/div[22]/div/div[12]/div[5]/div/div[1]/div[1]/div/div/h1/a").text
         print(title)
         df.loc[c, "Name"] = title
-        df.loc[c, "Sector"] = "Gym"
+        df.loc[c, "Sector"] = "Companies(Private)"
         info = WebDriverWait(browser, 3).until(
             EC.presence_of_all_elements_located((By.CLASS_NAME, "info-div"))
         )
         df.loc[c, "Address"] = info[0].text
-        print("Address: ", info[0].text)
+        # print("Address: ", info[0].text)
         if len(info) > 1:
             df.loc[c, "Phone"] = info[1].text
-            print("Phone: ", info[1].text)
+            # print("Phone: ", info[1].text)
         print()
+
+    except KeyboardInterrupt:
+        exit()
 
     except:
         continue
     finally:
         print("============================================================")
-        df.to_csv("Final_Gyms.csv")
+        df.to_csv("Final_Companies.csv")
+        print(f"Restart from number {c}")

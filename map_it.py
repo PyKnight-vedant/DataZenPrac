@@ -69,11 +69,11 @@ def scraper(i):
         for ele in phone_no:
             phone_regex = re.compile("\d+\s*\d+\s*\d+")
             phone = phone_regex.findall(ele.text)
-            if len(phone) > 0:
+            if len(phone) > 0 and df.loc[i, "Phone"] is np.nan:
                 if len(phone[0]) >= 10:
                     print(phone[0])
+                    df.loc[i, "Phone"] = phone[0]
                     break
-        df.loc[i, "Phone"] = phone[0]
 
         browser.quit()
 
@@ -83,7 +83,7 @@ if __name__ == "__main__":
     # Create the webdriver object
 
     try:
-        for i in range(9666, len(df)+1):
+        for i in range(15467, len(df)+1):
             try:
                 scraper(i)
 
