@@ -16,15 +16,12 @@ chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument('--headless')
 chrome_options.add_argument('--incognito')
 browser = webdriver.Chrome(options=chrome_options)
-df = pd.read_csv(
-    r"C:\Users\Vedant\Desktop\DataZenPrac\Final_Companies.csv", index_col=0)
 
-df["Sector"] = "Companies(Private)"
 
-'''
+
 links = []
-for i in range(1, 1088):
-    url = f"https://www.mouthshut.com/Employer-ProID-21-page-{i}"
+for i in range(1, 1899):
+    url = f"https://www.mouthshut.com/Restaurants-ProID-169-page-{i}"
     print(f"Scraping {url}")
     browser.get(url)
     cards = browser.find_elements(By.CLASS_NAME, "card-body")
@@ -34,7 +31,7 @@ for i in range(1, 1088):
         print(link)
         links.append(link)
 
-file_path = "companies_links.txt"
+file_path = "links.txt"
 
 # Open the file in write mode
 with open(file_path, "w") as file:
@@ -43,6 +40,10 @@ with open(file_path, "w") as file:
         file.write(link + "\n")
 
 '''
+df = pd.read_csv(
+    r"C:\Users\Vedant\Desktop\DataZenPrac\Final_Companies.csv", index_col=0)
+
+df["Sector"] = "Companies(Private)"
 # Specify the file path
 file_path = "links.txt"
 
@@ -59,7 +60,8 @@ print(links)
 
 l = len(links)
 
-for c in tqdm(range(842, l)):
+
+for c in tqdm(range(20009, 30000)):
     print("============================================================")
 
     link = links[c-1]
@@ -91,4 +93,5 @@ for c in tqdm(range(842, l)):
     finally:
         print("============================================================")
         df.to_csv("Final_Companies.csv")
-        print(f"Restart from number {c}")
+        print(f"Restart from number {c}")'''
+

@@ -15,6 +15,7 @@ import webbrowser
 import concurrent.futures
 import time
 import multiprocessing
+from tqdm import tqdm
 df = pd.read_csv(
     r"C:\Users\Vedant\Desktop\DataZenPrac\App2Build_Deliverable (4).csv", index_col=[0])
 print(df[["Name", "Address", "Lat-Long"]])
@@ -34,7 +35,7 @@ def scraper(i):
 # Open the Google Map URL
 
     print(i, "===================================\n", df.loc[i, :])
-    if df.loc[i, "Phone"] is np.nan or df.loc[i, "Address"] is np.nan or df.loc[i, "Lat-Long"] is np.nan:
+    if df.loc[i, "Phone"] is np.NaN or df.loc[i, "Address"] is np.NaN or df.loc[i, "Lat-Long"] is np.NaN:
         chrome_options = webdriver.ChromeOptions()
         chrome_options.add_argument('--headless')
         chrome_options.add_argument('--incognito')
@@ -48,32 +49,35 @@ def scraper(i):
         wait = WebDriverWait(browser, 8)
         # Get the current URL
         time.sleep(3)
-        current_url = browser.current_url
-        print("Current URL:", current_url)
-        url_regex = re.compile("@\d+.\d+,\d+.\d+")
-        lat_long = url_regex.findall(current_url)[0][1:]
-        df.loc[i, "Lat-Long"] = lat_long
+        if df.loc[i, "Lat-Long"] is np.NaN:
+            current_url = browser.current_url
+            print("Current URL:", current_url)
+            url_regex = re.compile("@\d+.\d+,\d+.\d+")
+            lat_long = url_regex.findall(current_url)[0][1:]
+            df.loc[i, "Lat-Long"] = lat_long
 
         title = wait.until(EC.presence_of_element_located(
             (By.XPATH,  "/html/body/div[1]/div[3]/div[8]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div/div[1]/div[1]/h1")))
 
         print(i, "-", title.text)
 
-        address = browser.find_element(By.CLASS_NAME, "CsEnBe")
-        print("\n", address.text)
-        df.loc[i, "Address"] = address.text
+        if df.loc[i, "Address"] is np.NaN:
+            address = browser.find_element(By.CLASS_NAME, "CsEnBe")
+            print("\n", address.text)
+            df.loc[i, "Address"] = address.text
 
-        phone_no = wait.until(EC.presence_of_all_elements_located(
-            (By.CLASS_NAME, "Io6YTe.fontBodyMedium.kR99db")))
+        if df.loc[i, "Phone"] is np.NaN:
+            phone_no = wait.until(EC.presence_of_all_elements_located(
+                (By.CLASS_NAME, "Io6YTe.fontBodyMedium.kR99db")))
 
-        for ele in phone_no:
-            phone_regex = re.compile("\d+\s*\d+\s*\d+")
-            phone = phone_regex.findall(ele.text)
-            if len(phone) > 0 and df.loc[i, "Phone"] is np.nan:
-                if len(phone[0]) >= 10:
-                    print(phone[0])
-                    df.loc[i, "Phone"] = phone[0]
-                    break
+            for ele in phone_no:
+                phone_regex = re.compile("\d+\s*\d+\s*\d+")
+                phone = phone_regex.findall(ele.text)
+                if len(phone) > 0 and df.loc[i, "Phone"] is np.nan:
+                    if len(phone[0]) >= 10:
+                        print(phone[0])
+                        df.loc[i, "Phone"] = phone[0]
+                        break
 
         browser.quit()
 
@@ -83,7 +87,7 @@ if __name__ == "__main__":
     # Create the webdriver object
 
     try:
-        for i in range(15467, len(df)+1):
+        for i in tqdm(range(48675, 1, -1)):
             try:
                 scraper(i)
 
