@@ -64,7 +64,7 @@ def scraper(i):
 
 
 try:
-    for no in tqdm(range(4185, len(df)+1)):
+    for no in tqdm(range(18400, 19000)):
         try:
             if df.loc[no, "Email"] is np.NaN:
                 scraper(no)
@@ -79,3 +79,6 @@ try:
 finally:
     print(f"Done at {no}")
     browser.quit()
+    print(f"Email count: {df.Email.notnull().sum()}")
+    webbrowser.open(
+        r"https://open.spotify.com/track/4pNNkkPGAb8GN2sh7XhiZO?si=1cbb16c6c93f48b9")

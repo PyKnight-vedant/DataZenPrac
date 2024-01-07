@@ -87,7 +87,7 @@ if __name__ == "__main__":
     # Create the webdriver object
 
     try:
-        for i in tqdm(range(48675, 1, -1)):
+        for i in tqdm(range(30000, len(df)+1)):
             try:
                 scraper(i)
 
