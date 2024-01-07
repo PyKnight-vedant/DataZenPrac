@@ -38,16 +38,16 @@ def scraper(i):
     base_url = "https://www.google.com/search?q="
 # "https://www.google.com/maps/place/Indian+Institute+Of+Technology%E2%80%93Madras+(IIT%E2%80%93Madras)/@12.9914929,80.2311104,17z/data=!3m1!4b1!4m6!3m5!1s0x3a5267f29aa9a61f:0x24ef264085e6a094!8m2!3d12.9914929!4d80.2336907!16zL20vMGd5eHdk?entry=ttu"]
 # Open the Google Map URL
-    org_name = str(df.loc[i, "Name"]+" " +
-                   df.loc[i, "City"]+" "+df.loc[i, "Sector"] + " email").replace(" ", "+")
+    org_name = str(df.loc[i, "Name"])+" " + str(df.loc[i, "City"]) + \
+        " "+str(df.loc[i, "Sector"]) + " email".replace(" ", "+")
     url = base_url+org_name
     browser.get(url)
     print("\n", i, "---------", df.loc[i, "Name"],
           "---------", df.loc[i, "Lat-Long"])
     current_url = browser.current_url
+
     print("Current URL:", current_url)
     email_pattern = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
-    time.sleep(0.2)
     text = browser.page_source
     matches = re.findall(email_pattern, text)
 
@@ -59,21 +59,20 @@ def scraper(i):
             s += match
     print(s)
     df.loc[i, "Email"] = s
-    time.sleep(0.2)
+    time.sleep(0.5)
     df.to_csv(r"C:\Users\Vedant\Desktop\DataZenPrac\App2Build_Deliverable (4).csv")
 
 
 try:
-    for no in tqdm(range(19410, 19600)):
+    for no in tqdm(range(28391, 30000)):
         try:
             if df.loc[no, "Email"] is np.NaN:
                 scraper(no)
+                time.sleep(1)
 
         except KeyboardInterrupt:
             exit()
 
-        except:
-            continue
 
 finally:
     print(f"Done at {no}")
