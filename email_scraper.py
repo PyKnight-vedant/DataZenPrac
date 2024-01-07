@@ -64,7 +64,7 @@ def scraper(i):
 
 
 try:
-    for no in tqdm(range(18400, 19000)):
+    for no in tqdm(range(19000, 19600)):
         try:
             if df.loc[no, "Email"] is np.NaN:
                 scraper(no)
