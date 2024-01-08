@@ -45,7 +45,8 @@ def scraper(i):
     print("\n", i, "---------", df.loc[i, "Name"],
           "---------", df.loc[i, "Lat-Long"])
     current_url = browser.current_url
-
+    if "sorry" in current_url:
+        exit()
     print("Current URL:", current_url)
     email_pattern = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
     text = browser.page_source
@@ -60,16 +61,14 @@ def scraper(i):
             s += match
     print(s)
     df.loc[i, "Email"] = s
-    time.sleep(0.5)
-    df.to_csv(r"C:\Users\Vedant\Desktop\DataZenPrac\App2Build_Deliverable (4).csv")
 
 
 try:
-    for no in tqdm(range(48961, 48700, -1)):
+    for no in tqdm(range(45000, 44000, -1)):
         try:
             if df.loc[no, "Email"] is np.NaN:
                 scraper(no)
-                time.sleep(1.5)
+                time.sleep(2)
 
         except KeyboardInterrupt:
             exit()
@@ -77,6 +76,7 @@ try:
 
 finally:
     print(f"Done at {no}")
+    df.to_csv(r"C:\Users\Vedant\Desktop\DataZenPrac\App2Build_Deliverable (4).csv")
     browser.quit()
     print(f"Email count: ")
     print(df.Email.notnull().sum())
