@@ -53,6 +53,7 @@ def scraper(i):
 
     print(matches)
     s = ""
+    matches = list(set(matches))
     for match in matches:
         match += ","
         if match != 'empty-light@2x.png,' and match != 'empty-dark@2x.png,':
@@ -64,11 +65,11 @@ def scraper(i):
 
 
 try:
-    for no in tqdm(range(28391, 30000)):
+    for no in tqdm(range(48961, 48700, -1)):
         try:
             if df.loc[no, "Email"] is np.NaN:
                 scraper(no)
-                time.sleep(1)
+                time.sleep(1.5)
 
         except KeyboardInterrupt:
             exit()
