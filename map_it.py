@@ -87,7 +87,7 @@ if __name__ == "__main__":
     # Create the webdriver object
 
     try:
-        for i in tqdm(range(30000, len(df)+1)):
+        for i in tqdm(range(len(df)+1, 40250, -1)):
             try:
                 scraper(i)
 
@@ -110,5 +110,7 @@ if __name__ == "__main__":
         print(df["Address"].notnull().sum())
         print("Lat-Long")
         print(df["Lat-Long"].notnull().sum())
+        print("Email")
+        print(df["Email"].notnull().sum())
         webbrowser.open(
-            r"https://open.spotify.com/track/4cjrtfi0I7xLMQvxnICu6U?si=4d87843fb55b4c47")
+            r"https://open.spotify.com/track/4pNNkkPGAb8GN2sh7XhiZO?si=1cbb16c6c93f48b9")
