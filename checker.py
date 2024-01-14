@@ -17,7 +17,7 @@ print("Email")
 print(df["Email"].notnull().sum())
 
 for i in range(1, len(df)+1):
-    if isinstance(df.loc[i, "Email"], float) and isinstance(df.loc[i, "Phone"], float):
+    if isinstance(df.loc[i, "City"], float) and isinstance(df.loc[i, "Phone"], float):
         df.drop(i, inplace=True)
 print()
 print(len(df))

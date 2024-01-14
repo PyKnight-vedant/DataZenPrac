@@ -1,28 +1,21 @@
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from tqdm import tqdm
-chrome_options = webdriver.ChromeOptions()
-chrome_options.add_argument('--headless')
-chrome_options.add_argument('--incognito')
-browser = webdriver.Chrome(options=chrome_options)
+import pandas as pd
+
+df = pd.read_csv(
+    r"C:\Users\Vedant\Desktop\DataZenPrac\App2Build_Deliverable (4).csv", index_col=0)
 
 
-links = []
-for i in tqdm(range(1, 1899)):
-    url = f"https://www.mouthshut.com/Restaurants-ProID-169-page-{i}"
-    print(f"Scraping {url}")
-    browser.get(url)
-    cards = browser.find_elements(By.CLASS_NAME, "card-body")
-    for card in cards:
-        link = card.find_element(
-            By.TAG_NAME, "a").get_attribute("href")
-        print(link)
-        links.append(link)
+# List of cities to filter
+cities_to_filter = ["Kerala", "Mumbai", "Pune",
+                    "Bangalore", "Chennai", "Kolkata", "Nagpur", "Thane"]
 
-file_path = "links.txt"
+# Filtering the DataFrame
+filtered_df = df[df['City'].isin(cities_to_filter)]
 
-# Open the file in write mode
-with open(file_path, "w") as file:
-    # Write each element to the file
-    for link in links:
-        file.write(link + "\n")
+# Display the filtered DataFrame
+print(filtered_df)
+print("True:", len(filtered_df))
+
+miscellanious_df = df[~df['City'].isin(cities_to_filter)]
+
+print("Miscellaneous:", len(miscellanious_df))
+print(miscellanious_df.City.unique())
