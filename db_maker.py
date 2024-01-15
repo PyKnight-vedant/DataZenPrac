@@ -23,13 +23,14 @@ print("True:", len(filtered_df))
 print("Miscellaneous:", len(miscellaneous_df))
 
 for city in miscellaneous_df.City.unique():
-    for sector in miscellaneous_df.Sector.unique():
-        working_df = pd.DataFrame(columns=miscellaneous_df.columns)
-        for i in range(1, len(miscellaneous_df)+1):
-            if miscellaneous_df.loc[i, "Sector"] == sector:
-                working_df.loc[i, :] = miscellaneous_df.loc[i, :]
+    if isinstance(city, float):
+        for sector in miscellaneous_df.Sector.unique():
+            working_df = pd.DataFrame(columns=miscellaneous_df.columns)
+            for i in range(1, len(miscellaneous_df)+1):
+                if miscellaneous_df.loc[i, "Sector"] == sector and miscellaneous_df.loc[i, "City"] == city:
+                    working_df.loc[i, :] = miscellaneous_df.loc[i, :]
 
-        if isinstance(city, str):
+            city = "Unfound "
             directory = f"C:\\Users\\Vedant\\Desktop\\DataZenPrac\\DATABASE\\miscellaneous\\{city.strip()}"
             os.makedirs(directory, exist_ok=True)
             working_df.to_csv(os.path.join(
