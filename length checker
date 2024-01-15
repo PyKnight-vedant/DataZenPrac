@@ -1,0 +1,23 @@
+import pandas as pd
+import os
+
+# Specify the root folder containing multiple subfolders with CSV files
+root_folder = r'C:\Users\Vedant\Desktop\DataZenPrac\DATABASE\miscellaneous'
+
+# Initialize a variable to store the total length
+total_length = 0
+
+# Recursively traverse the root folder
+for root, dirs, files in os.walk(root_folder):
+    for file_name in files:
+        if file_name.endswith('.csv'):
+            file_path = os.path.join(root, file_name)
+
+            # Read the CSV file into a DataFrame
+            df = pd.read_csv(file_path)
+
+            # Add the length of the DataFrame to the total
+            total_length += len(df)
+
+# Print the total length of all DataFrames
+print(f"Total Length of All DataFrames: {total_length}")

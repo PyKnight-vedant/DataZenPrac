@@ -22,14 +22,15 @@ print("True:", len(filtered_df))
 
 print("Miscellaneous:", len(miscellaneous_df))
 
+for city in miscellaneous_df.City.unique():
+    for sector in miscellaneous_df.Sector.unique():
+        working_df = pd.DataFrame(columns=miscellaneous_df.columns)
+        for i in range(1, len(miscellaneous_df)+1):
+            if miscellaneous_df.loc[i, "Sector"] == sector:
+                working_df.loc[i, :] = miscellaneous_df.loc[i, :]
 
-for sector in miscellaneous_df.Sector.unique():
-    working_df = pd.DataFrame(columns=miscellaneous_df.columns)
-    for i in range(1, len(miscellaneous_df)+1):
-        if miscellaneous_df.loc[i, "Sector"] == sector:
-            working_df.loc[i, :] = miscellaneous_df.loc[i, :]
-
-    directory = f"C:\\Users\\Vedant\\Desktop\\DataZenPrac\\DATABASE\\miscellaneous"
-    os.makedirs(directory, exist_ok=True)
-    working_df.to_csv(os.path.join(
-        directory, f"{sector}.csv"), index=False)
+        if isinstance(city, str):
+            directory = f"C:\\Users\\Vedant\\Desktop\\DataZenPrac\\DATABASE\\miscellaneous\\{city.strip()}"
+            os.makedirs(directory, exist_ok=True)
+            working_df.to_csv(os.path.join(
+                directory, f"{sector}.csv"), index=False)
